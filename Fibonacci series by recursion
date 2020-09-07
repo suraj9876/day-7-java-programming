@@ -1,0 +1,29 @@
+import java.util.*;
+public class fibonacci_recursion
+{
+    public static int fibbo(int n)
+    {
+       if(n == 0)
+        {
+            return 0;
+        }
+        else if (n==1||n==2)
+        {
+            return 1;
+        }
+        else
+        {
+            return fibbo(n-2)+fibbo(n-1);
+        }
+    }
+    public static void main(String[]args)
+    {   
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the term:");
+        int x=sc.nextInt();
+        System.out.print("Fibonacci Series of "+x+" numbers: ");
+	    for(int i = 0; i < x; i++){
+			System.out.print(fibbo(i) +" ");
+		}
+    }
+}
