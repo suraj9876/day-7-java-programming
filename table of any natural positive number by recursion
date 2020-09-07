@@ -1,0 +1,32 @@
+ import java.util.*;
+class table_recursion { 
+	
+	
+	static void table(int N, int i) 
+	{ 
+		 
+		if (i > 10) 
+			return ; 
+	
+		 
+		System.out.println(N + " X " + i + " = " + N * i); 
+				
+		
+		table(N, i + 1); 
+	} 
+	
+	 
+	public static void main (String[] args) 
+	{ 
+		
+		Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number:");
+        int x=sc.nextInt();
+
+	
+		
+		table(x, 1); 
+	} 
+} 
+
+
